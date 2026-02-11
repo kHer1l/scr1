@@ -1,0 +1,405 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /scr1_pipe_ialu_tb_top/dut
+=== Design Unit: work.scr1_pipe_ialu
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                       100        95         5    95.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /scr1_pipe_ialu_tb_top/dut
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File ../../core/pipeline/scr1_pipe_ialu.sv
+------------------------------------IF Branch------------------------------------
+    206                                      100     Count coming in to IF
+    206             1                         94     
+    207             1                          6     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    252                                       95     Count coming in to IF
+    252             1                         12     
+    253             1                         83     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------CASE Branch------------------------------------
+    258                                      101     Count coming in to CASE
+    259             1                          3     
+    260             1                          4     
+    261             1                         94     
+Branch totals: 3 hits of 3 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    293                                       46     Count coming in to IF
+    293             1                         13     
+    294             1                         33     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    294                                       33     Count coming in to IF
+    294             2                         11     
+    295             1                         22     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    324                                      465     Count coming in to IF
+    324             1                        437     
+                                              28     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    329                                      492     Count coming in to IF
+    329             1                        437     
+    330             1                         55     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    330                                       54     Count coming in to IF
+    330             2                         40     
+    334             1                         14     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    341                                       62     Count coming in to IF
+    341             1                    ***0***     
+    343             1                         62     
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    351                                      116     Count coming in to IF
+    351             1                         78     
+                                              38     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------CASE Branch------------------------------------
+    352                                       78     Count coming in to CASE
+    353             1                         40     
+    357             1                         32     
+    362             1                          6     
+                                         ***0***     All False Count
+Branch totals: 3 hits of 4 branches = 75.00%
+
+------------------------------------IF Branch------------------------------------
+    354                                       40     Count coming in to IF
+    354             1                         19     
+    355             1                         21     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    358                                       32     Count coming in to IF
+    358             1                         16     
+    359             1                         16     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    359                                       16     Count coming in to IF
+    359             2                          5     
+    360             1                         11     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    407                                      164     Count coming in to IF
+    407             1                         29     
+    407             2                        135     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    408                                      168     Count coming in to IF
+    408             1                         32     
+    408             2                        136     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    409                                       34     Count coming in to IF
+    409             1                         22     
+    409             2                         12     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    461                                      945     Count coming in to IF
+    461             1                        878     
+                                              67     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    467                                      878     Count coming in to IF
+    467             1                         28     
+    468             1                        850     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    478                                      464     Count coming in to IF
+    478             1                        435     
+                                              29     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    483                                      585     Count coming in to IF
+    483             1                        102     
+    484             1                        483     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    484                                      485     Count coming in to IF
+    484             2                         56     
+    485             1                        429     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------CASE Branch------------------------------------
+    495                                      534     Count coming in to CASE
+    496             1                        446     
+    518             1                         88     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    500                                      446     Count coming in to IF
+    500             1                          3     
+    501             1                        443     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    501                                      443     Count coming in to IF
+    501             2                         14     
+    502             1                        429     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    505                                      446     Count coming in to IF
+    505             1                          3     
+    506             1                        443     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    506                                      443     Count coming in to IF
+    506             2                         14     
+    507             1                        429     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    521                                      534     Count coming in to IF
+    521             1                         19     
+    522             1                        515     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    532                                      460     Count coming in to IF
+    532             1                        432     
+                                              28     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    540                                     1333     Count coming in to IF
+    540             1                       1309     
+    544             1                         24     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    545                                       88     Count coming in to IF
+    545             1                         68     
+    549             1                         20     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------CASE Branch------------------------------------
+    563                                      663     Count coming in to CASE
+    564             1                          4     
+    567             1                          7     
+    570             1                         11     
+    573             1                         10     
+    576             1                         23     
+    579             1                         11     
+    583             1                          8     
+    587             1                          2     
+    591             1                          9     
+    595             1                          5     
+    599             1                          8     
+    603             1                         10     
+    604             1                          5     
+    605             1                          8     
+    609             1                         10     
+    610             1                          8     
+    611             1                          6     
+    612             1                          6     
+    630             1                        105     
+    631             1                        212     
+    632             1                         37     
+    633             1                        150     
+    654             1                          8     
+Branch totals: 23 hits of 23 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    615                                       30     Count coming in to IF
+    615             1                         20     
+    616             1                         10     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------CASE Branch------------------------------------
+    634                                      504     Count coming in to CASE
+    635             1                         33     
+    641             1                        465     
+    645             1                          6     
+                                         ***0***     All False Count
+Branch totals: 3 hits of 4 branches = 75.00%
+
+------------------------------------IF Branch------------------------------------
+    637                                       33     Count coming in to IF
+    637             1                         33     
+    638             1                    ***0***     
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    642                                      465     Count coming in to IF
+    642             1                        168     
+    642             2                        297     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    647                                        6     Count coming in to IF
+    647             1                          6     
+    648             1                    ***0***     
+Branch totals: 1 hit of 2 branches = 50.00%
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      98        97         1    98.97%
+
+================================Statement Details================================
+
+Statement Coverage for instance /scr1_pipe_ialu_tb_top/dut --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File ../../core/pipeline/scr1_pipe_ialu.sv
+    204             1                        101     
+    205             1                        101     
+    209             1                        101     
+    212             1                        101     
+    217             1                        101     
+    218             1                        101     
+    219             1                        101     
+    220             1                        101     
+    235             1                        101     
+    247             1                         96     
+    250             1                         96     
+    255             1                        101     
+    256             1                        101     
+    257             1                        101     
+    259             1                          3     
+    260             1                          4     
+    261             1                         94     
+    284             1                         96     
+    288             1                         96     
+    293             1                         47     
+    297             1                        101     
+    310             1                         24     
+    315             1                        937     
+    323             1                        465     
+    325             1                        437     
+    329             1                        493     
+    340             1                         62     
+    342             1                    ***0***     
+    344             1                         62     
+    348             1                        116     
+    349             1                        116     
+    354             1                         40     
+    358             1                         32     
+    363             1                          6     
+    369             1                         33     
+    373             1                         33     
+    397             1                         96     
+    407             1                        166     
+    408             1                        170     
+    409             1                         35     
+    449             1                         96     
+    456             1                        945     
+    457             1                        945     
+    458             1                        945     
+    459             1                        945     
+    460             1                        945     
+    462             1                        878     
+    463             1                        878     
+    464             1                        878     
+    466             1                        878     
+    477             1                        464     
+    479             1                        435     
+    483             1                        588     
+    491             1                        534     
+    492             1                        534     
+    493             1                        534     
+    494             1                        534     
+    500             1                        446     
+    503             1                        446     
+    504             1                        446     
+    505             1                        446     
+    508             1                        446     
+    520             1                        534     
+    531             1                        460     
+    533             1                        432     
+    534             1                        432     
+    535             1                        432     
+    540             1                       1335     
+    545             1                         90     
+    556             1                        663     
+    557             1                        663     
+    558             1                        663     
+    560             1                        663     
+    565             1                          4     
+    568             1                          7     
+    571             1                         11     
+    574             1                         10     
+    577             1                         23     
+    580             1                         11     
+    581             1                         11     
+    584             1                          8     
+    585             1                          8     
+    588             1                          2     
+    589             1                          2     
+    592             1                          9     
+    593             1                          9     
+    596             1                          5     
+    597             1                          5     
+    600             1                          8     
+    601             1                          8     
+    606             1                         23     
+    614             1                         30     
+    636             1                         33     
+    639             1                         33     
+    642             1                        465     
+    643             1                        465     
+    646             1                          6     
+    649             1                          6     
+
+=================================================================================
+=== Instance: /scr1_pipe_ialu_package
+=== Design Unit: work.scr1_pipe_ialu_package
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       1         1         0   100.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/scr1_pipe_ialu_package/scr1_pipe_ialu_seqc_default/body/#ublk#82886581#11/immed__14
+                     sv/scr1_pipe_ialu_seqc_default.svh(14)
+                                                        0          1
+
+
+ASSERTION RESULTS:
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/scr1_pipe_ialu_package/scr1_pipe_ialu_seqc_default/body/#ublk#82886581#11/immed__14
+                     sv/scr1_pipe_ialu_seqc_default.svh(14)
+                                                        0          1
+
+Total Coverage By Instance (filtered view): 97.99%
+

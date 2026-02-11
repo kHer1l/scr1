@@ -1,0 +1,448 @@
+# //  Questa Sim-64
+# //  Version 2021.1 win64 Jan 19 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do questa.do
+# 
+# #40;5=85 48@5:B>@88 8 181;8>B5:8, 5A;8 ACI5AB2C5B.
+# if {[file exists temp_work]} { 
+# 	vdel -lib temp_work -all
+# }
+# 
+# !>740=85 181;8>B5:8
+# vlib temp_work
+# 
+# @82O7:0 181;8>B5:8 : work.
+# vmap work temp_work
+# QuestaSim-64 vmap 2021.1 Lib Mapping Utility 2021.01 Jan 19 2021
+# vmap work temp_work 
+# Copying C:/questasim64_2021.1/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# ><?8;OF8O 8AE>4=8:0 AG5BG8:0.
+# vlog ../../core/pipeline/scr1_pipe_ialu.sv +incdir+../../includes
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 19:35:31 on Feb 11,2026
+# vlog -reportprogress 300 ../../core/pipeline/scr1_pipe_ialu.sv "+incdir+../../includes" 
+# -- Compiling package scr1_pipe_ialu_sv_unit
+# -- Compiling module scr1_pipe_ialu
+# 
+# Top level modules:
+# 	scr1_pipe_ialu
+# End time: 19:35:31 on Feb 11,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+#vlog sv/*.sv +incdir+../../includes
+# vlog "+incdir+../../includes" \
+# 	sv/scr1_pkg.sv \
+# 	sv/scr1_pipe_ialu_if.sv \
+# 	sv/scr1_pipe_ialu_package.sv \
+# 	sv/scr1_pipe_ialu_tb_top.sv 
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 19:35:31 on Feb 11,2026
+# vlog -reportprogress 300 "+incdir+../../includes" sv/scr1_pkg.sv sv/scr1_pipe_ialu_if.sv sv/scr1_pipe_ialu_package.sv sv/scr1_pipe_ialu_tb_top.sv 
+# -- Compiling package scr1_pkg
+# -- Compiling package scr1_pipe_ialu_if_sv_unit
+# -- Importing package scr1_pkg
+# -- Compiling interface scr1_pipe_ialu_if
+# -- Compiling package scr1_pipe_ialu_package
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# ** Note: (vlog-2286) sv/scr1_pipe_ialu_package.sv(9): Using implicit +incdir+C:/questasim64_2021.1/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# -- Compiling package scr1_pipe_ialu_tb_top_sv_unit
+# -- Compiling module scr1_pipe_ialu_tb_top
+# -- Importing package scr1_pipe_ialu_package
+# 
+# Top level modules:
+# 	scr1_pipe_ialu_tb_top
+# End time: 19:35:31 on Feb 11,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# 
+# 0?CA: A8<C;OF88
+# vsim -gui work.scr1_pipe_ialu_tb_top -voptargs=+acc -coverage -voptargs="+cover=sb+/scr1_pipe_ialu_tb_top/dut"
+# vsim -gui work.scr1_pipe_ialu_tb_top -voptargs="+acc" -coverage -voptargs=""+cover=sb+/scr1_pipe_ialu_tb_top/dut"" 
+# Start time: 19:35:31 on Feb 11,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "scr1_pipe_ialu(fast)".
+# Loading sv_std.std
+# Loading work.scr1_pipe_ialu_if(fast)
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.scr1_pkg(fast)
+# Loading work.scr1_pipe_ialu_package(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.scr1_pipe_ialu_tb_top_sv_unit(fast)
+# Loading work.scr1_pipe_ialu_tb_top(fast)
+# Loading work.scr1_pipe_ialu_if_sv_unit(fast)
+# Loading work.scr1_pipe_ialu_if(fast__2)
+# Loading work.scr1_pipe_ialu_sv_unit(fast)
+# Loading work.scr1_pipe_ialu(fast)
+# Loading C:/questasim64_2021.1/uvm-1.1d\win64\uvm_dpi.dll
+#vsim -gui work.scr1_pipe_ialu_tb_top -voptargs=+acc
+# 
+# 
+# >102;5=85 A83=0;>2 2 >:=> 2@5<5==KE 4803@0<
+# add wave sim:/scr1_pipe_ialu_tb_top/scr1_pipe_ialu_if_h/*
+#add wave *
+# 
+# 0?CA: 
+# run -a
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test scr1_pipe_ialu_test_default...
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 5: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 00000000, main_op2 = 00000000, cmd = , main_res = 00000000, cmp_res = 0, addr_op1 = 00000000, addr_op2 = 00000000, addr_res = 00000000
+# predicted: main_op1 = 00000000, main_op2 = 00000000, cmd = , main_res = 00000000, cmp_res = 0, addr_op1 = 00000000, addr_op2 = 00000000, addr_res = 00000000
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 15: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = e74e3b58, main_op2 = 762b8892, cmd = SCR1_IALU_CMD_SLL, main_res = ed600000, cmp_res = 0, addr_op1 = 2fb2189a, addr_op2 = 0583f1d0, addr_res = 35360a6a
+# predicted: main_op1 = e74e3b58, main_op2 = 762b8892, cmd = SCR1_IALU_CMD_SLL, main_res = ed600000, cmp_res = 0, addr_op1 = 2fb2189a, addr_op2 = 0583f1d0, addr_res = 35360a6a
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 335: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = eb633565, main_op2 = f34efd0c, cmd = SCR1_IALU_CMD_DIVU, main_res = 00000000, cmp_res = 0, addr_op1 = cf5fa100, addr_op2 = e2c30d9c, addr_res = b222ae9c
+# predicted: main_op1 = eb633565, main_op2 = f34efd0c, cmd = SCR1_IALU_CMD_DIVU, main_res = 00000000, cmp_res = 0, addr_op1 = cf5fa100, addr_op2 = e2c30d9c, addr_res = b222ae9c
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 345: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = f9e52782, main_op2 = 36d27793, cmd = SCR1_IALU_CMD_OR, main_res = fff77793, cmp_res = 0, addr_op1 = ab0c08a9, addr_op2 = 8090aebc, addr_res = 2b9cb765
+# predicted: main_op1 = f9e52782, main_op2 = 36d27793, cmd = SCR1_IALU_CMD_OR, main_res = fff77793, cmp_res = 0, addr_op1 = ab0c08a9, addr_op2 = 8090aebc, addr_res = 2b9cb765
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 355: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 3348a6b7, main_op2 = ddd48bba, cmd = SCR1_IALU_CMD_SUB_LT, main_res = 00000000, cmp_res = 0, addr_op1 = 77ab6e67, addr_op2 = bbf1eec0, addr_res = 339d5d27
+# predicted: main_op1 = 3348a6b7, main_op2 = ddd48bba, cmd = SCR1_IALU_CMD_SUB_LT, main_res = 00000000, cmp_res = 0, addr_op1 = 77ab6e67, addr_op2 = bbf1eec0, addr_res = 339d5d27
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 365: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 50391f9e, main_op2 = aeace087, cmd = SCR1_IALU_CMD_MULHU, main_res = 36bd003a, cmp_res = 0, addr_op1 = 1be0d9ae, addr_op2 = 160e74fa, addr_res = 31ef4ea8
+# predicted: main_op1 = 50391f9e, main_op2 = aeace087, cmd = SCR1_IALU_CMD_MULHU, main_res = 36bd003a, cmp_res = 0, addr_op1 = 1be0d9ae, addr_op2 = 160e74fa, addr_res = 31ef4ea8
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 375: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 1b96dce1, main_op2 = 9ffc3bd0, cmd = SCR1_IALU_CMD_AND, main_res = 1b9418c0, cmp_res = 0, addr_op1 = d85e0080, addr_op2 = 75f629b1, addr_res = 4e542a31
+# predicted: main_op1 = 1b96dce1, main_op2 = 9ffc3bd0, cmd = SCR1_IALU_CMD_AND, main_res = 1b9418c0, cmp_res = 0, addr_op1 = d85e0080, addr_op2 = 75f629b1, addr_res = 4e542a31
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 705: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 10a3f4ec, main_op2 = 166e7837, cmd = SCR1_IALU_CMD_REM, main_res = 10a3f4ec, cmp_res = 0, addr_op1 = e6476e01, addr_op2 = 735107ae, addr_res = 599875af
+# predicted: main_op1 = 10a3f4ec, main_op2 = 166e7837, cmd = SCR1_IALU_CMD_REM, main_res = 10a3f4ec, cmp_res = 0, addr_op1 = e6476e01, addr_op2 = 735107ae, addr_res = 599875af
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 715: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 977d24e8, main_op2 = 0b51a7f6, cmd = SCR1_IALU_CMD_SUB_LTU, main_res = 00000000, cmp_res = 0, addr_op1 = 172a1e44, addr_op2 = 9152bb0d, addr_res = a87cd951
+# predicted: main_op1 = 977d24e8, main_op2 = 0b51a7f6, cmd = SCR1_IALU_CMD_SUB_LTU, main_res = 00000000, cmp_res = 0, addr_op1 = 172a1e44, addr_op2 = 9152bb0d, addr_res = a87cd951
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 725: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 2add5700, main_op2 = 959f21bf, cmd = SCR1_IALU_CMD_SUB, main_res = 953e3541, cmp_res = 0, addr_op1 = 8b764594, addr_op2 = 803a5ab8, addr_res = 0bb0a04c
+# predicted: main_op1 = 2add5700, main_op2 = 959f21bf, cmd = SCR1_IALU_CMD_SUB, main_res = 953e3541, cmp_res = 0, addr_op1 = 8b764594, addr_op2 = 803a5ab8, addr_res = 0bb0a04c
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 735: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 2acfc73c, main_op2 = 3b4e7f2e, cmd = SCR1_IALU_CMD_MULH, main_res = 09eb037e, cmp_res = 0, addr_op1 = 30bdaeee, addr_op2 = c0c66fa4, addr_res = f1841e92
+# predicted: main_op1 = 2acfc73c, main_op2 = 3b4e7f2e, cmd = SCR1_IALU_CMD_MULH, main_res = 09eb037e, cmp_res = 0, addr_op1 = 30bdaeee, addr_op2 = c0c66fa4, addr_res = f1841e92
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 1055: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = eadf1d89, main_op2 = 78b5372b, cmd = SCR1_IALU_CMD_REMU, main_res = 7229e65e, cmp_res = 0, addr_op1 = ad00390f, addr_op2 = 13e63c92, addr_res = c0e675a1
+# predicted: main_op1 = eadf1d89, main_op2 = 78b5372b, cmd = SCR1_IALU_CMD_REMU, main_res = 7229e65e, cmp_res = 0, addr_op1 = ad00390f, addr_op2 = 13e63c92, addr_res = c0e675a1
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 1065: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = b92240bf, main_op2 = 03f95a13, cmd = SCR1_IALU_CMD_SLL, main_res = 05f80000, cmp_res = 0, addr_op1 = 7a507962, addr_op2 = 27d401c9, addr_res = a2247b2b
+# predicted: main_op1 = b92240bf, main_op2 = 03f95a13, cmd = SCR1_IALU_CMD_SLL, main_res = 05f80000, cmp_res = 0, addr_op1 = 7a507962, addr_op2 = 27d401c9, addr_res = a2247b2b
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 1075: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = c131cb9a, main_op2 = 7352c626, cmd = SCR1_IALU_CMD_SUB, main_res = 4ddf0574, cmp_res = 0, addr_op1 = 964f6616, addr_op2 = 6e8d2bb8, addr_res = 04dc91ce
+# predicted: main_op1 = c131cb9a, main_op2 = 7352c626, cmd = SCR1_IALU_CMD_SUB, main_res = 4ddf0574, cmp_res = 0, addr_op1 = 964f6616, addr_op2 = 6e8d2bb8, addr_res = 04dc91ce
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 1395: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 95d7e003, main_op2 = 1648b2a0, cmd = SCR1_IALU_CMD_DIVU, main_res = 00000006, cmp_res = 0, addr_op1 = d21c1e31, addr_op2 = bd4f8310, addr_res = 8f6ba141
+# predicted: main_op1 = 95d7e003, main_op2 = 1648b2a0, cmd = SCR1_IALU_CMD_DIVU, main_res = 00000006, cmp_res = 0, addr_op1 = d21c1e31, addr_op2 = bd4f8310, addr_res = 8f6ba141
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 1405: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 29713de8, main_op2 = 4391c09a, cmd = SCR1_IALU_CMD_SUB_GE, main_res = fffffffe, cmp_res = 0, addr_op1 = 1b0d628e, addr_op2 = f229791d, addr_res = 0d36dbab
+# predicted: main_op1 = 29713de8, main_op2 = 4391c09a, cmd = SCR1_IALU_CMD_SUB_GE, main_res = fffffffe, cmp_res = 0, addr_op1 = 1b0d628e, addr_op2 = f229791d, addr_res = 0d36dbab
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 1415: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 3c0c49ba, main_op2 = 0c2b0f00, cmd = SCR1_IALU_CMD_SUB_NE, main_res = ffffffff, cmp_res = 1, addr_op1 = 5ed5efc2, addr_op2 = 595ea5ae, addr_res = b8349570
+# predicted: main_op1 = 3c0c49ba, main_op2 = 0c2b0f00, cmd = SCR1_IALU_CMD_SUB_NE, main_res = ffffffff, cmp_res = 1, addr_op1 = 5ed5efc2, addr_op2 = 595ea5ae, addr_res = b8349570
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 1425: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 989d8b9c, main_op2 = 3137f0a8, cmd = SCR1_IALU_CMD_SRA, main_res = ff989d8b, cmp_res = 0, addr_op1 = bf989fe3, addr_op2 = aa1b4bd0, addr_res = 69b3ebb3
+# predicted: main_op1 = 989d8b9c, main_op2 = 3137f0a8, cmd = SCR1_IALU_CMD_SRA, main_res = ff989d8b, cmp_res = 0, addr_op1 = bf989fe3, addr_op2 = aa1b4bd0, addr_res = 69b3ebb3
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 1435: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 65260c4e, main_op2 = a23db7a6, cmd = SCR1_IALU_CMD_SUB, main_res = c2e854a8, cmp_res = 0, addr_op1 = 64ced727, addr_op2 = ebb701c4, addr_res = 5085d8eb
+# predicted: main_op1 = 65260c4e, main_op2 = a23db7a6, cmd = SCR1_IALU_CMD_SUB, main_res = c2e854a8, cmp_res = 0, addr_op1 = 64ced727, addr_op2 = ebb701c4, addr_res = 5085d8eb
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 1445: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 385f3dd0, main_op2 = c0438343, cmd = SCR1_IALU_CMD_XOR, main_res = f81cbe93, cmp_res = 0, addr_op1 = 777c03b7, addr_op2 = b4cbd0a2, addr_res = 2c47d459
+# predicted: main_op1 = 385f3dd0, main_op2 = c0438343, cmd = SCR1_IALU_CMD_XOR, main_res = f81cbe93, cmp_res = 0, addr_op1 = 777c03b7, addr_op2 = b4cbd0a2, addr_res = 2c47d459
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 1455: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 39a0346a, main_op2 = dd2791d5, cmd = SCR1_IALU_CMD_SUB_NE, main_res = ffffffff, cmp_res = 1, addr_op1 = e598835e, addr_op2 = 85599ab8, addr_res = 6af21e16
+# predicted: main_op1 = 39a0346a, main_op2 = dd2791d5, cmd = SCR1_IALU_CMD_SUB_NE, main_res = ffffffff, cmp_res = 1, addr_op1 = e598835e, addr_op2 = 85599ab8, addr_res = 6af21e16
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 1465: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = c1228583, main_op2 = a7e3f77d, cmd = SCR1_IALU_CMD_SRA, main_res = fffffffe, cmp_res = 0, addr_op1 = 95081a58, addr_op2 = 5603ead0, addr_res = eb0c0528
+# predicted: main_op1 = c1228583, main_op2 = a7e3f77d, cmd = SCR1_IALU_CMD_SRA, main_res = fffffffe, cmp_res = 0, addr_op1 = 95081a58, addr_op2 = 5603ead0, addr_res = eb0c0528
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 1475: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 9a177d54, main_op2 = 1cf0214f, cmd = SCR1_IALU_CMD_SRA, main_res = ffff342e, cmp_res = 0, addr_op1 = 0dd8c835, addr_op2 = 26a1c761, addr_res = 347a8f96
+# predicted: main_op1 = 9a177d54, main_op2 = 1cf0214f, cmd = SCR1_IALU_CMD_SRA, main_res = ffff342e, cmp_res = 0, addr_op1 = 0dd8c835, addr_op2 = 26a1c761, addr_res = 347a8f96
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 1485: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = c30756e7, main_op2 = e4f98c30, cmd = SCR1_IALU_CMD_SUB_LT, main_res = 00000001, cmp_res = 1, addr_op1 = f254d166, addr_op2 = 01cf8d51, addr_res = f4245eb7
+# predicted: main_op1 = c30756e7, main_op2 = e4f98c30, cmd = SCR1_IALU_CMD_SUB_LT, main_res = 00000001, cmp_res = 1, addr_op1 = f254d166, addr_op2 = 01cf8d51, addr_res = f4245eb7
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 1495: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 00000000, main_op2 = 00000000, cmd = SCR1_IALU_CMD_NONE, main_res = 00000000, cmp_res = 0, addr_op1 = 99cff32a, addr_op2 = c4523797, addr_res = 5e222ac1
+# predicted: main_op1 = 00000000, main_op2 = 00000000, cmd = SCR1_IALU_CMD_NONE, main_res = 00000000, cmp_res = 0, addr_op1 = 99cff32a, addr_op2 = c4523797, addr_res = 5e222ac1
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 1505: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = b559436a, main_op2 = d0475634, cmd = SCR1_IALU_CMD_MULHSU, main_res = c343b964, cmp_res = 0, addr_op1 = 407985ef, addr_op2 = fb5cbb8b, addr_res = 3bd6417a
+# predicted: main_op1 = b559436a, main_op2 = d0475634, cmd = SCR1_IALU_CMD_MULHSU, main_res = c343b964, cmp_res = 0, addr_op1 = 407985ef, addr_op2 = fb5cbb8b, addr_res = 3bd6417a
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 1515: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = bfada7dc, main_op2 = 6f6e4490, cmd = SCR1_IALU_CMD_MUL, main_res = 76ccdbc0, cmp_res = 0, addr_op1 = e00a25c4, addr_op2 = 538b1a2a, addr_res = 33953fee
+# predicted: main_op1 = bfada7dc, main_op2 = 6f6e4490, cmd = SCR1_IALU_CMD_MUL, main_res = 76ccdbc0, cmp_res = 0, addr_op1 = e00a25c4, addr_op2 = 538b1a2a, addr_res = 33953fee
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 1525: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 70c5d5ae, main_op2 = e55ada6d, cmd = SCR1_IALU_CMD_SUB_LT, main_res = 00000000, cmp_res = 0, addr_op1 = 3fe2ce7c, addr_op2 = 53d92b5d, addr_res = 93bbf9d9
+# predicted: main_op1 = 70c5d5ae, main_op2 = e55ada6d, cmd = SCR1_IALU_CMD_SUB_LT, main_res = 00000000, cmp_res = 0, addr_op1 = 3fe2ce7c, addr_op2 = 53d92b5d, addr_res = 93bbf9d9
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 1845: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = c6f24722, main_op2 = fc459581, cmd = SCR1_IALU_CMD_DIVU, main_res = 00000000, cmp_res = 0, addr_op1 = 7fa41b6b, addr_op2 = d61616b7, addr_res = 55ba3222
+# predicted: main_op1 = c6f24722, main_op2 = fc459581, cmd = SCR1_IALU_CMD_DIVU, main_res = 00000000, cmp_res = 0, addr_op1 = 7fa41b6b, addr_op2 = d61616b7, addr_res = 55ba3222
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 1855: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = c5758b1a, main_op2 = a59ee39e, cmd = SCR1_IALU_CMD_SLL, main_res = 80000000, cmp_res = 0, addr_op1 = 2e7452ed, addr_op2 = 36dff942, addr_res = 65544c2f
+# predicted: main_op1 = c5758b1a, main_op2 = a59ee39e, cmd = SCR1_IALU_CMD_SLL, main_res = 80000000, cmp_res = 0, addr_op1 = 2e7452ed, addr_op2 = 36dff942, addr_res = 65544c2f
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 1865: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = cbbd3ff4, main_op2 = 998beeec, cmd = SCR1_IALU_CMD_OR, main_res = dbbffffc, cmp_res = 0, addr_op1 = 4d5fbe43, addr_op2 = 103c45fe, addr_res = 5d9c0441
+# predicted: main_op1 = cbbd3ff4, main_op2 = 998beeec, cmd = SCR1_IALU_CMD_OR, main_res = dbbffffc, cmp_res = 0, addr_op1 = 4d5fbe43, addr_op2 = 103c45fe, addr_res = 5d9c0441
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 2185: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 129737e3, main_op2 = 8fd73970, cmd = SCR1_IALU_CMD_DIVU, main_res = 00000000, cmp_res = 0, addr_op1 = f7ba64b7, addr_op2 = 3d4f538d, addr_res = 3509b844
+# predicted: main_op1 = 129737e3, main_op2 = 8fd73970, cmd = SCR1_IALU_CMD_DIVU, main_res = 00000000, cmp_res = 0, addr_op1 = f7ba64b7, addr_op2 = 3d4f538d, addr_res = 3509b844
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 2195: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 78db02bc, main_op2 = 619c9730, cmd = SCR1_IALU_CMD_SUB_LT, main_res = 00000000, cmp_res = 0, addr_op1 = de4a3943, addr_op2 = 0561c25a, addr_res = e3abfb9d
+# predicted: main_op1 = 78db02bc, main_op2 = 619c9730, cmd = SCR1_IALU_CMD_SUB_LT, main_res = 00000000, cmp_res = 0, addr_op1 = de4a3943, addr_op2 = 0561c25a, addr_res = e3abfb9d
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 2205: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = ad54aecf, main_op2 = 6973166d, cmd = SCR1_IALU_CMD_SUB_LTU, main_res = 00000000, cmp_res = 0, addr_op1 = 99ebe631, addr_op2 = 8648927e, addr_res = 203478af
+# predicted: main_op1 = ad54aecf, main_op2 = 6973166d, cmd = SCR1_IALU_CMD_SUB_LTU, main_res = 00000000, cmp_res = 0, addr_op1 = 99ebe631, addr_op2 = 8648927e, addr_res = 203478af
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 2215: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 68b1dd6d, main_op2 = bd6dcc5e, cmd = SCR1_IALU_CMD_SRA, main_res = 00000001, cmp_res = 0, addr_op1 = fd84a4b0, addr_op2 = 0dc717f6, addr_res = 0b4bbca6
+# predicted: main_op1 = 68b1dd6d, main_op2 = bd6dcc5e, cmd = SCR1_IALU_CMD_SRA, main_res = 00000001, cmp_res = 0, addr_op1 = fd84a4b0, addr_op2 = 0dc717f6, addr_res = 0b4bbca6
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 2225: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = c19e8fd2, main_op2 = 8d1965b8, cmd = SCR1_IALU_CMD_SUB_GEU, main_res = ffffffff, cmp_res = 1, addr_op1 = e96758b1, addr_op2 = e1e043a9, addr_res = cb479c5a
+# predicted: main_op1 = c19e8fd2, main_op2 = 8d1965b8, cmd = SCR1_IALU_CMD_SUB_GEU, main_res = ffffffff, cmp_res = 1, addr_op1 = e96758b1, addr_op2 = e1e043a9, addr_res = cb479c5a
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 2235: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = b2df05f6, main_op2 = a770cfc8, cmd = SCR1_IALU_CMD_SUB_GEU, main_res = ffffffff, cmp_res = 1, addr_op1 = 40950ca0, addr_op2 = 15d1d358, addr_res = 5666dff8
+# predicted: main_op1 = b2df05f6, main_op2 = a770cfc8, cmd = SCR1_IALU_CMD_SUB_GEU, main_res = ffffffff, cmp_res = 1, addr_op1 = 40950ca0, addr_op2 = 15d1d358, addr_res = 5666dff8
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 2245: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 078c2e57, main_op2 = 51fd5360, cmd = SCR1_IALU_CMD_SUB_LTU, main_res = 00000001, cmp_res = 1, addr_op1 = 02a73648, addr_op2 = 0c60b26a, addr_res = 0f07e8b2
+# predicted: main_op1 = 078c2e57, main_op2 = 51fd5360, cmd = SCR1_IALU_CMD_SUB_LTU, main_res = 00000001, cmp_res = 1, addr_op1 = 02a73648, addr_op2 = 0c60b26a, addr_res = 0f07e8b2
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 2255: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 4c6890c1, main_op2 = bf54eb47, cmd = SCR1_IALU_CMD_MUL, main_res = ac355087, cmp_res = 0, addr_op1 = fe41da0b, addr_op2 = 6ca73536, addr_res = 6ae90f41
+# predicted: main_op1 = 4c6890c1, main_op2 = bf54eb47, cmd = SCR1_IALU_CMD_MUL, main_res = ac355087, cmp_res = 0, addr_op1 = fe41da0b, addr_op2 = 6ca73536, addr_res = 6ae90f41
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 2265: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = c6828c36, main_op2 = ac08d8a5, cmd = SCR1_IALU_CMD_MUL, main_res = c221eece, cmp_res = 0, addr_op1 = 71347c85, addr_op2 = eaed465d, addr_res = 5c21c2e2
+# predicted: main_op1 = c6828c36, main_op2 = ac08d8a5, cmd = SCR1_IALU_CMD_MUL, main_res = c221eece, cmp_res = 0, addr_op1 = 71347c85, addr_op2 = eaed465d, addr_res = 5c21c2e2
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 2275: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = a4785ce3, main_op2 = 29b926cd, cmd = SCR1_IALU_CMD_MULHU, main_res = 1ace3ac9, cmp_res = 0, addr_op1 = 3acfc2ae, addr_op2 = 4f599784, addr_res = 8a295a32
+# predicted: main_op1 = a4785ce3, main_op2 = 29b926cd, cmd = SCR1_IALU_CMD_MULHU, main_res = 1ace3ac9, cmp_res = 0, addr_op1 = 3acfc2ae, addr_op2 = 4f599784, addr_res = 8a295a32
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 2285: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 908fa493, main_op2 = de723c46, cmd = SCR1_IALU_CMD_SUB, main_res = b21d684d, cmp_res = 0, addr_op1 = 40c39177, addr_op2 = 75951a2b, addr_res = b658aba2
+# predicted: main_op1 = 908fa493, main_op2 = de723c46, cmd = SCR1_IALU_CMD_SUB, main_res = b21d684d, cmp_res = 0, addr_op1 = 40c39177, addr_op2 = 75951a2b, addr_res = b658aba2
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 2295: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 915f3f18, main_op2 = d3338fef, cmd = SCR1_IALU_CMD_SUB_GE, main_res = fffffffe, cmp_res = 0, addr_op1 = 86fea122, addr_op2 = c5382944, addr_res = 4c36ca66
+# predicted: main_op1 = 915f3f18, main_op2 = d3338fef, cmd = SCR1_IALU_CMD_SUB_GE, main_res = fffffffe, cmp_res = 0, addr_op1 = 86fea122, addr_op2 = c5382944, addr_res = 4c36ca66
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 2305: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = cdb3f9f3, main_op2 = ae75fae0, cmd = SCR1_IALU_CMD_SUB_LT, main_res = 00000000, cmp_res = 0, addr_op1 = ab18be42, addr_op2 = 83ceaad7, addr_res = 2ee76919
+# predicted: main_op1 = cdb3f9f3, main_op2 = ae75fae0, cmd = SCR1_IALU_CMD_SUB_LT, main_res = 00000000, cmp_res = 0, addr_op1 = ab18be42, addr_op2 = 83ceaad7, addr_res = 2ee76919
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 2315: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = cc929ad4, main_op2 = ca8efe3d, cmd = SCR1_IALU_CMD_XOR, main_res = 061c64e9, cmp_res = 0, addr_op1 = 92f0f892, addr_op2 = e8d0217c, addr_res = 7bc11a0e
+# predicted: main_op1 = cc929ad4, main_op2 = ca8efe3d, cmd = SCR1_IALU_CMD_XOR, main_res = 061c64e9, cmp_res = 0, addr_op1 = 92f0f892, addr_op2 = e8d0217c, addr_res = 7bc11a0e
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 2325: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = ec0a337b, main_op2 = 2808f673, cmd = SCR1_IALU_CMD_SUB_NE, main_res = ffffffff, cmp_res = 1, addr_op1 = aa091a06, addr_op2 = 96de9739, addr_res = 40e7b13f
+# predicted: main_op1 = ec0a337b, main_op2 = 2808f673, cmd = SCR1_IALU_CMD_SUB_NE, main_res = ffffffff, cmp_res = 1, addr_op1 = aa091a06, addr_op2 = 96de9739, addr_res = 40e7b13f
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 2335: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 752cb215, main_op2 = cab282b0, cmd = SCR1_IALU_CMD_SLL, main_res = b2150000, cmp_res = 0, addr_op1 = 3d857169, addr_op2 = 80843be0, addr_res = be09ad49
+# predicted: main_op1 = 752cb215, main_op2 = cab282b0, cmd = SCR1_IALU_CMD_SLL, main_res = b2150000, cmp_res = 0, addr_op1 = 3d857169, addr_op2 = 80843be0, addr_res = be09ad49
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 2655: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = ac9dc434, main_op2 = f26ef2f4, cmd = SCR1_IALU_CMD_DIV, main_res = 00000006, cmp_res = 0, addr_op1 = 121d4db9, addr_op2 = 1e57cb84, addr_res = 3075193d
+# predicted: main_op1 = ac9dc434, main_op2 = f26ef2f4, cmd = SCR1_IALU_CMD_DIV, main_res = 00000006, cmp_res = 0, addr_op1 = 121d4db9, addr_op2 = 1e57cb84, addr_res = 3075193d
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 2985: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 4457366c, main_op2 = 704d2dce, cmd = SCR1_IALU_CMD_REMU, main_res = 4457366c, cmp_res = 0, addr_op1 = 45f8c539, addr_op2 = 11dbe062, addr_res = 57d4a59b
+# predicted: main_op1 = 4457366c, main_op2 = 704d2dce, cmd = SCR1_IALU_CMD_REMU, main_res = 4457366c, cmp_res = 0, addr_op1 = 45f8c539, addr_op2 = 11dbe062, addr_res = 57d4a59b
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 2995: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 5434a138, main_op2 = 38389a86, cmd = SCR1_IALU_CMD_ADD, main_res = 8c6d3bbe, cmp_res = 0, addr_op1 = 1b32a116, addr_op2 = 5e4cdbe0, addr_res = 797f7cf6
+# predicted: main_op1 = 5434a138, main_op2 = 38389a86, cmd = SCR1_IALU_CMD_ADD, main_res = 8c6d3bbe, cmp_res = 0, addr_op1 = 1b32a116, addr_op2 = 5e4cdbe0, addr_res = 797f7cf6
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 3005: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = aff10653, main_op2 = da06ff8c, cmd = SCR1_IALU_CMD_SUB, main_res = d5ea06c7, cmp_res = 0, addr_op1 = 448a1899, addr_op2 = 2935918d, addr_res = 6dbfaa26
+# predicted: main_op1 = aff10653, main_op2 = da06ff8c, cmd = SCR1_IALU_CMD_SUB, main_res = d5ea06c7, cmp_res = 0, addr_op1 = 448a1899, addr_op2 = 2935918d, addr_res = 6dbfaa26
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 3015: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = f51b65c7, main_op2 = 804ddad5, cmd = SCR1_IALU_CMD_ADD, main_res = 7569409c, cmp_res = 0, addr_op1 = 500019c1, addr_op2 = b619f08e, addr_res = 061a0a4f
+# predicted: main_op1 = f51b65c7, main_op2 = 804ddad5, cmd = SCR1_IALU_CMD_ADD, main_res = 7569409c, cmp_res = 0, addr_op1 = 500019c1, addr_op2 = b619f08e, addr_res = 061a0a4f
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 3025: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 6c1a9b6c, main_op2 = 88c6ee7b, cmd = SCR1_IALU_CMD_SUB_EQ, main_res = 00000000, cmp_res = 0, addr_op1 = 30c6de1c, addr_op2 = 9615b0dd, addr_res = c6dc8ef9
+# predicted: main_op1 = 6c1a9b6c, main_op2 = 88c6ee7b, cmd = SCR1_IALU_CMD_SUB_EQ, main_res = 00000000, cmp_res = 0, addr_op1 = 30c6de1c, addr_op2 = 9615b0dd, addr_res = c6dc8ef9
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 3035: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 5adad04a, main_op2 = 6ff56573, cmd = SCR1_IALU_CMD_SUB, main_res = eae56ad7, cmp_res = 0, addr_op1 = 945cccd2, addr_op2 = a53aa264, addr_res = 39976f36
+# predicted: main_op1 = 5adad04a, main_op2 = 6ff56573, cmd = SCR1_IALU_CMD_SUB, main_res = eae56ad7, cmp_res = 0, addr_op1 = 945cccd2, addr_op2 = a53aa264, addr_res = 39976f36
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 3045: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 7e3670ff, main_op2 = 69b984cb, cmd = SCR1_IALU_CMD_XOR, main_res = 178ff434, cmp_res = 0, addr_op1 = 56995c88, addr_op2 = 00cc05b6, addr_res = 5765623e
+# predicted: main_op1 = 7e3670ff, main_op2 = 69b984cb, cmd = SCR1_IALU_CMD_XOR, main_res = 178ff434, cmp_res = 0, addr_op1 = 56995c88, addr_op2 = 00cc05b6, addr_res = 5765623e
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 3055: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 98bfb237, main_op2 = f7cef954, cmd = SCR1_IALU_CMD_SUB_LTU, main_res = 00000001, cmp_res = 1, addr_op1 = 56664af0, addr_op2 = 459f102c, addr_res = 9c055b1c
+# predicted: main_op1 = 98bfb237, main_op2 = f7cef954, cmd = SCR1_IALU_CMD_SUB_LTU, main_res = 00000001, cmp_res = 1, addr_op1 = 56664af0, addr_op2 = 459f102c, addr_res = 9c055b1c
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 3065: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = ab19f11e, main_op2 = f0336fbe, cmd = SCR1_IALU_CMD_SLL, main_res = 80000000, cmp_res = 0, addr_op1 = 3ce64cef, addr_op2 = 5e6113da, addr_res = 9b4760c9
+# predicted: main_op1 = ab19f11e, main_op2 = f0336fbe, cmd = SCR1_IALU_CMD_SLL, main_res = 80000000, cmp_res = 0, addr_op1 = 3ce64cef, addr_op2 = 5e6113da, addr_res = 9b4760c9
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 3075: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = a3f8af68, main_op2 = 84258c9e, cmd = SCR1_IALU_CMD_XOR, main_res = 27dd23f6, cmp_res = 0, addr_op1 = 904a44b3, addr_op2 = 16fe9595, addr_res = a748da48
+# predicted: main_op1 = a3f8af68, main_op2 = 84258c9e, cmd = SCR1_IALU_CMD_XOR, main_res = 27dd23f6, cmp_res = 0, addr_op1 = 904a44b3, addr_op2 = 16fe9595, addr_res = a748da48
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 3395: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 729ead8c, main_op2 = 3df25cb8, cmd = SCR1_IALU_CMD_DIV, main_res = 00000001, cmp_res = 0, addr_op1 = 3c7b9083, addr_op2 = 01ba653a, addr_res = 3e35f5bd
+# predicted: main_op1 = 729ead8c, main_op2 = 3df25cb8, cmd = SCR1_IALU_CMD_DIV, main_res = 00000001, cmp_res = 0, addr_op1 = 3c7b9083, addr_op2 = 01ba653a, addr_res = 3e35f5bd
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 3405: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 02328051, main_op2 = ff0d3d67, cmd = SCR1_IALU_CMD_SUB_NE, main_res = ffffffff, cmp_res = 1, addr_op1 = 5a1058f4, addr_op2 = d34c1c2a, addr_res = 2d5c751e
+# predicted: main_op1 = 02328051, main_op2 = ff0d3d67, cmd = SCR1_IALU_CMD_SUB_NE, main_res = ffffffff, cmp_res = 1, addr_op1 = 5a1058f4, addr_op2 = d34c1c2a, addr_res = 2d5c751e
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 3415: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = ff1fb221, main_op2 = 7717e16f, cmd = SCR1_IALU_CMD_SUB_GEU, main_res = ffffffff, cmp_res = 1, addr_op1 = 27a5904a, addr_op2 = 2924f44c, addr_res = 50ca8496
+# predicted: main_op1 = ff1fb221, main_op2 = 7717e16f, cmd = SCR1_IALU_CMD_SUB_GEU, main_res = ffffffff, cmp_res = 1, addr_op1 = 27a5904a, addr_op2 = 2924f44c, addr_res = 50ca8496
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 3425: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 62187c16, main_op2 = 67ecfb7e, cmd = SCR1_IALU_CMD_SRL, main_res = 00000001, cmp_res = 0, addr_op1 = 9ff5ebaa, addr_op2 = 837cd512, addr_res = 2372c0bc
+# predicted: main_op1 = 62187c16, main_op2 = 67ecfb7e, cmd = SCR1_IALU_CMD_SRL, main_res = 00000001, cmp_res = 0, addr_op1 = 9ff5ebaa, addr_op2 = 837cd512, addr_res = 2372c0bc
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 3435: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 3b36499b, main_op2 = f31777e8, cmd = SCR1_IALU_CMD_SUB, main_res = 481ed1b3, cmp_res = 0, addr_op1 = 983afefa, addr_op2 = c9cc2f94, addr_res = 62072e8e
+# predicted: main_op1 = 3b36499b, main_op2 = f31777e8, cmd = SCR1_IALU_CMD_SUB, main_res = 481ed1b3, cmp_res = 0, addr_op1 = 983afefa, addr_op2 = c9cc2f94, addr_res = 62072e8e
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 3445: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 8458a6c3, main_op2 = ae20966f, cmd = SCR1_IALU_CMD_MULHSU, main_res = abe483c3, cmp_res = 0, addr_op1 = c44d7408, addr_op2 = d4467c09, addr_res = 9893f011
+# predicted: main_op1 = 8458a6c3, main_op2 = ae20966f, cmd = SCR1_IALU_CMD_MULHSU, main_res = abe483c3, cmp_res = 0, addr_op1 = c44d7408, addr_op2 = d4467c09, addr_res = 9893f011
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 3455: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = c6e85721, main_op2 = 8a8401e6, cmd = SCR1_IALU_CMD_MUL, main_res = 541968a6, cmp_res = 0, addr_op1 = 2f3c349a, addr_op2 = 2e8651f7, addr_res = 5dc28691
+# predicted: main_op1 = c6e85721, main_op2 = 8a8401e6, cmd = SCR1_IALU_CMD_MUL, main_res = 541968a6, cmp_res = 0, addr_op1 = 2f3c349a, addr_op2 = 2e8651f7, addr_res = 5dc28691
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 3775: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = f1e19a2c, main_op2 = 2a074886, cmd = SCR1_IALU_CMD_REMU, main_res = 1fbd2f8e, cmp_res = 0, addr_op1 = bf8d8451, addr_op2 = 2f3350cf, addr_res = eec0d520
+# predicted: main_op1 = f1e19a2c, main_op2 = 2a074886, cmd = SCR1_IALU_CMD_REMU, main_res = 1fbd2f8e, cmp_res = 0, addr_op1 = bf8d8451, addr_op2 = 2f3350cf, addr_res = eec0d520
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 3785: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 9a187de3, main_op2 = 5c8f6e77, cmd = SCR1_IALU_CMD_ADD, main_res = f6a7ec5a, cmp_res = 0, addr_op1 = 60a7b0e5, addr_op2 = 20f41fe3, addr_res = 819bd0c8
+# predicted: main_op1 = 9a187de3, main_op2 = 5c8f6e77, cmd = SCR1_IALU_CMD_ADD, main_res = f6a7ec5a, cmp_res = 0, addr_op1 = 60a7b0e5, addr_op2 = 20f41fe3, addr_res = 819bd0c8
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 3795: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = ff010a4a, main_op2 = 5857ab9b, cmd = SCR1_IALU_CMD_ADD, main_res = 5758b5e5, cmp_res = 0, addr_op1 = b0dbb4d2, addr_op2 = 642facc3, addr_res = 150b6195
+# predicted: main_op1 = ff010a4a, main_op2 = 5857ab9b, cmd = SCR1_IALU_CMD_ADD, main_res = 5758b5e5, cmp_res = 0, addr_op1 = b0dbb4d2, addr_op2 = 642facc3, addr_res = 150b6195
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 3805: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 9fde8547, main_op2 = 6376e7f2, cmd = SCR1_IALU_CMD_MUL, main_res = ce570e1e, cmp_res = 0, addr_op1 = f559d7e9, addr_op2 = 8122ad1f, addr_res = 767c8508
+# predicted: main_op1 = 9fde8547, main_op2 = 6376e7f2, cmd = SCR1_IALU_CMD_MUL, main_res = ce570e1e, cmp_res = 0, addr_op1 = f559d7e9, addr_op2 = 8122ad1f, addr_res = 767c8508
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 3815: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 5c57612c, main_op2 = 5e6a05ed, cmd = SCR1_IALU_CMD_XOR, main_res = 023d64c1, cmp_res = 0, addr_op1 = aed496f1, addr_op2 = 1c7d685b, addr_res = cb51ff4c
+# predicted: main_op1 = 5c57612c, main_op2 = 5e6a05ed, cmd = SCR1_IALU_CMD_XOR, main_res = 023d64c1, cmp_res = 0, addr_op1 = aed496f1, addr_op2 = 1c7d685b, addr_res = cb51ff4c
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 3825: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 67e7dcd3, main_op2 = 7ee34c55, cmd = SCR1_IALU_CMD_SRL, main_res = 0000033f, cmp_res = 0, addr_op1 = 045bf6a3, addr_op2 = 360d6780, addr_res = 3a695e23
+# predicted: main_op1 = 67e7dcd3, main_op2 = 7ee34c55, cmd = SCR1_IALU_CMD_SRL, main_res = 0000033f, cmp_res = 0, addr_op1 = 045bf6a3, addr_op2 = 360d6780, addr_res = 3a695e23
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 3835: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 667c53bf, main_op2 = b10baaff, cmd = SCR1_IALU_CMD_SUB_NE, main_res = ffffffff, cmp_res = 1, addr_op1 = b0251b59, addr_op2 = c4362e17, addr_res = 745b4970
+# predicted: main_op1 = 667c53bf, main_op2 = b10baaff, cmd = SCR1_IALU_CMD_SUB_NE, main_res = ffffffff, cmp_res = 1, addr_op1 = b0251b59, addr_op2 = c4362e17, addr_res = 745b4970
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 3845: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 00000000, main_op2 = 00000000, cmd = SCR1_IALU_CMD_NONE, main_res = 00000000, cmp_res = 0, addr_op1 = b15bedf1, addr_op2 = 1cdf0d69, addr_res = ce3afb5a
+# predicted: main_op1 = 00000000, main_op2 = 00000000, cmd = SCR1_IALU_CMD_NONE, main_res = 00000000, cmp_res = 0, addr_op1 = b15bedf1, addr_op2 = 1cdf0d69, addr_res = ce3afb5a
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 3855: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = a2fe66bd, main_op2 = b1162ce8, cmd = SCR1_IALU_CMD_SUB, main_res = f1e839d5, cmp_res = 0, addr_op1 = 1dd5fec1, addr_op2 = 90f66752, addr_res = aecc6613
+# predicted: main_op1 = a2fe66bd, main_op2 = b1162ce8, cmd = SCR1_IALU_CMD_SUB, main_res = f1e839d5, cmp_res = 0, addr_op1 = 1dd5fec1, addr_op2 = 90f66752, addr_res = aecc6613
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 3865: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 96dbc2de, main_op2 = 3d753ed9, cmd = SCR1_IALU_CMD_ADD, main_res = d45101b7, cmp_res = 0, addr_op1 = 83972fd5, addr_op2 = e4279727, addr_res = 67bec6fc
+# predicted: main_op1 = 96dbc2de, main_op2 = 3d753ed9, cmd = SCR1_IALU_CMD_ADD, main_res = d45101b7, cmp_res = 0, addr_op1 = 83972fd5, addr_op2 = e4279727, addr_res = 67bec6fc
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 3875: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 15af75cf, main_op2 = b287018b, cmd = SCR1_IALU_CMD_SUB, main_res = 63287444, cmp_res = 0, addr_op1 = 6878b897, addr_op2 = b01420a4, addr_res = 188cd93b
+# predicted: main_op1 = 15af75cf, main_op2 = b287018b, cmd = SCR1_IALU_CMD_SUB, main_res = 63287444, cmp_res = 0, addr_op1 = 6878b897, addr_op2 = b01420a4, addr_res = 188cd93b
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 3885: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 7179374c, main_op2 = e06b3ab4, cmd = SCR1_IALU_CMD_XOR, main_res = 91120df8, cmp_res = 0, addr_op1 = c6224144, addr_op2 = 59aa3d8d, addr_res = 1fcc7ed1
+# predicted: main_op1 = 7179374c, main_op2 = e06b3ab4, cmd = SCR1_IALU_CMD_XOR, main_res = 91120df8, cmp_res = 0, addr_op1 = c6224144, addr_op2 = 59aa3d8d, addr_res = 1fcc7ed1
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 3895: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = e9f1b596, main_op2 = 48762133, cmd = SCR1_IALU_CMD_MULHU, main_res = 4237eed2, cmp_res = 0, addr_op1 = 7157f577, addr_op2 = 234c7ed1, addr_res = 94a47448
+# predicted: main_op1 = e9f1b596, main_op2 = 48762133, cmd = SCR1_IALU_CMD_MULHU, main_res = 4237eed2, cmp_res = 0, addr_op1 = 7157f577, addr_op2 = 234c7ed1, addr_res = 94a47448
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 3905: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 9cd1f565, main_op2 = 229178ae, cmd = SCR1_IALU_CMD_OR, main_res = bed1fdef, cmp_res = 0, addr_op1 = 28a4e51e, addr_op2 = afa0dae8, addr_res = d845c006
+# predicted: main_op1 = 9cd1f565, main_op2 = 229178ae, cmd = SCR1_IALU_CMD_OR, main_res = bed1fdef, cmp_res = 0, addr_op1 = 28a4e51e, addr_op2 = afa0dae8, addr_res = d845c006
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 3915: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = ba193f69, main_op2 = fec0b7d3, cmd = SCR1_IALU_CMD_AND, main_res = ba003741, cmp_res = 0, addr_op1 = 5c929042, addr_op2 = ad7fab36, addr_res = 0a123b78
+# predicted: main_op1 = ba193f69, main_op2 = fec0b7d3, cmd = SCR1_IALU_CMD_AND, main_res = ba003741, cmp_res = 0, addr_op1 = 5c929042, addr_op2 = ad7fab36, addr_res = 0a123b78
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 3925: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 835e2dde, main_op2 = 7750e020, cmd = SCR1_IALU_CMD_MULH, main_res = c5e967a3, cmp_res = 0, addr_op1 = 69a342e0, addr_op2 = 286e913f, addr_res = 9211d41f
+# predicted: main_op1 = 835e2dde, main_op2 = 7750e020, cmd = SCR1_IALU_CMD_MULH, main_res = c5e967a3, cmp_res = 0, addr_op1 = 69a342e0, addr_op2 = 286e913f, addr_res = 9211d41f
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 4245: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 151bbf43, main_op2 = 525507b4, cmd = SCR1_IALU_CMD_DIV, main_res = 00000000, cmp_res = 0, addr_op1 = 692c8142, addr_op2 = a8c4a8c0, addr_res = 11f12a02
+# predicted: main_op1 = 151bbf43, main_op2 = 525507b4, cmd = SCR1_IALU_CMD_DIV, main_res = 00000000, cmp_res = 0, addr_op1 = 692c8142, addr_op2 = a8c4a8c0, addr_res = 11f12a02
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 4255: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 83d6f44a, main_op2 = 33392166, cmd = SCR1_IALU_CMD_SUB, main_res = 509dd2e4, cmp_res = 0, addr_op1 = d7e0f758, addr_op2 = 7cafd14e, addr_res = 5490c8a6
+# predicted: main_op1 = 83d6f44a, main_op2 = 33392166, cmd = SCR1_IALU_CMD_SUB, main_res = 509dd2e4, cmp_res = 0, addr_op1 = d7e0f758, addr_op2 = 7cafd14e, addr_res = 5490c8a6
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 4265: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 5c0252f3, main_op2 = 86ede6ca, cmd = SCR1_IALU_CMD_SUB, main_res = d5146c29, cmp_res = 0, addr_op1 = 8272004c, addr_op2 = 67e149d2, addr_res = ea534a1e
+# predicted: main_op1 = 5c0252f3, main_op2 = 86ede6ca, cmd = SCR1_IALU_CMD_SUB, main_res = d5146c29, cmp_res = 0, addr_op1 = 8272004c, addr_op2 = 67e149d2, addr_res = ea534a1e
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 4275: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = f002b0c9, main_op2 = d984dab5, cmd = SCR1_IALU_CMD_SLL, main_res = 19200000, cmp_res = 0, addr_op1 = 88210b39, addr_op2 = cfb7d2de, addr_res = 57d8de17
+# predicted: main_op1 = f002b0c9, main_op2 = d984dab5, cmd = SCR1_IALU_CMD_SLL, main_res = 19200000, cmp_res = 0, addr_op1 = 88210b39, addr_op2 = cfb7d2de, addr_res = 57d8de17
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 4285: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 65a79872, main_op2 = 7fd9ec64, cmd = SCR1_IALU_CMD_MULH, main_res = 32c4ad8e, cmp_res = 0, addr_op1 = 4db723d7, addr_op2 = b05c89cb, addr_res = fe13ada2
+# predicted: main_op1 = 65a79872, main_op2 = 7fd9ec64, cmd = SCR1_IALU_CMD_MULH, main_res = 32c4ad8e, cmp_res = 0, addr_op1 = 4db723d7, addr_op2 = b05c89cb, addr_res = fe13ada2
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 4295: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 126db535, main_op2 = 4548cf0e, cmd = SCR1_IALU_CMD_SUB_GE, main_res = fffffffe, cmp_res = 0, addr_op1 = 9a0096cd, addr_op2 = 900346c0, addr_res = 2a03dd8d
+# predicted: main_op1 = 126db535, main_op2 = 4548cf0e, cmd = SCR1_IALU_CMD_SUB_GE, main_res = fffffffe, cmp_res = 0, addr_op1 = 9a0096cd, addr_op2 = 900346c0, addr_res = 2a03dd8d
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 4615: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 92af96c4, main_op2 = 52e3fda7, cmd = SCR1_IALU_CMD_DIVU, main_res = 00000001, cmp_res = 0, addr_op1 = 7c5b0618, addr_op2 = f0f24714, addr_res = 6d4d4d2c
+# predicted: main_op1 = 92af96c4, main_op2 = 52e3fda7, cmd = SCR1_IALU_CMD_DIVU, main_res = 00000001, cmp_res = 0, addr_op1 = 7c5b0618, addr_op2 = f0f24714, addr_res = 6d4d4d2c
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 4625: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 4d9d8169, main_op2 = aa08587c, cmd = SCR1_IALU_CMD_SUB, main_res = a39528ed, cmp_res = 0, addr_op1 = 2bd4941c, addr_op2 = 49b77f2f, addr_res = 758c134b
+# predicted: main_op1 = 4d9d8169, main_op2 = aa08587c, cmd = SCR1_IALU_CMD_SUB, main_res = a39528ed, cmp_res = 0, addr_op1 = 2bd4941c, addr_op2 = 49b77f2f, addr_res = 758c134b
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 4635: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = cc0eb06c, main_op2 = 2209b362, cmd = SCR1_IALU_CMD_ADD, main_res = ee1863ce, cmp_res = 0, addr_op1 = 9059a462, addr_op2 = 17907127, addr_res = a7ea1589
+# predicted: main_op1 = cc0eb06c, main_op2 = 2209b362, cmd = SCR1_IALU_CMD_ADD, main_res = ee1863ce, cmp_res = 0, addr_op1 = 9059a462, addr_op2 = 17907127, addr_res = a7ea1589
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 4645: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 07e984bf, main_op2 = e9f4e2aa, cmd = SCR1_IALU_CMD_MULHSU, main_res = 073b1b65, cmp_res = 0, addr_op1 = 97874711, addr_op2 = 4af51fdb, addr_res = e27c66ec
+# predicted: main_op1 = 07e984bf, main_op2 = e9f4e2aa, cmd = SCR1_IALU_CMD_MULHSU, main_res = 073b1b65, cmp_res = 0, addr_op1 = 97874711, addr_op2 = 4af51fdb, addr_res = e27c66ec
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 4655: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 1b3ad547, main_op2 = ab0d86ea, cmd = SCR1_IALU_CMD_SUB, main_res = 702d4e5d, cmp_res = 0, addr_op1 = b98c0ea0, addr_op2 = f76f2011, addr_res = b0fb2eb1
+# predicted: main_op1 = 1b3ad547, main_op2 = ab0d86ea, cmd = SCR1_IALU_CMD_SUB, main_res = 702d4e5d, cmp_res = 0, addr_op1 = b98c0ea0, addr_op2 = f76f2011, addr_res = b0fb2eb1
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 4975: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = a016dcb5, main_op2 = 567b0742, cmd = SCR1_IALU_CMD_DIVU, main_res = 00000001, cmp_res = 0, addr_op1 = c67658fb, addr_op2 = 9591d1a5, addr_res = 5c082aa0
+# predicted: main_op1 = a016dcb5, main_op2 = 567b0742, cmd = SCR1_IALU_CMD_DIVU, main_res = 00000001, cmp_res = 0, addr_op1 = c67658fb, addr_op2 = 9591d1a5, addr_res = 5c082aa0
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 4985: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 00000000, main_op2 = 00000000, cmd = SCR1_IALU_CMD_NONE, main_res = 00000000, cmp_res = 0, addr_op1 = 7fdede88, addr_op2 = 0fd5db1a, addr_res = 8fb4b9a2
+# predicted: main_op1 = 00000000, main_op2 = 00000000, cmd = SCR1_IALU_CMD_NONE, main_res = 00000000, cmp_res = 0, addr_op1 = 7fdede88, addr_op2 = 0fd5db1a, addr_res = 8fb4b9a2
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 4995: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 1abeaf4a, main_op2 = c10bc17b, cmd = SCR1_IALU_CMD_SUB_GEU, main_res = fffffffe, cmp_res = 0, addr_op1 = 250dd49b, addr_op2 = 93f301de, addr_res = b900d679
+# predicted: main_op1 = 1abeaf4a, main_op2 = c10bc17b, cmd = SCR1_IALU_CMD_SUB_GEU, main_res = fffffffe, cmp_res = 0, addr_op1 = 250dd49b, addr_op2 = 93f301de, addr_res = b900d679
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 5325: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 0a3878cd, main_op2 = 9c2ce13a, cmd = SCR1_IALU_CMD_REMU, main_res = 0a3878cd, cmp_res = 0, addr_op1 = d24d8c49, addr_op2 = 9c357dbb, addr_res = 6e830a04
+# predicted: main_op1 = 0a3878cd, main_op2 = 9c2ce13a, cmd = SCR1_IALU_CMD_REMU, main_res = 0a3878cd, cmp_res = 0, addr_op1 = d24d8c49, addr_op2 = 9c357dbb, addr_res = 6e830a04
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 5335: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = ddfc7514, main_op2 = 34cd06ea, cmd = SCR1_IALU_CMD_SRL, main_res = 00377f1d, cmp_res = 0, addr_op1 = 8c03144a, addr_op2 = de09977e, addr_res = 6a0cabc8
+# predicted: main_op1 = ddfc7514, main_op2 = 34cd06ea, cmd = SCR1_IALU_CMD_SRL, main_res = 00377f1d, cmp_res = 0, addr_op1 = 8c03144a, addr_op2 = de09977e, addr_res = 6a0cabc8
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 5345: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = 2954601d, main_op2 = 184a38a9, cmd = SCR1_IALU_CMD_MULHU, main_res = 03ebe48c, cmp_res = 0, addr_op1 = 9348df6c, addr_op2 = d872b235, addr_res = 6bbb91a1
+# predicted: main_op1 = 2954601d, main_op2 = 184a38a9, cmd = SCR1_IALU_CMD_MULHU, main_res = 03ebe48c, cmp_res = 0, addr_op1 = 9348df6c, addr_op2 = d872b235, addr_res = 6bbb91a1
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 5355: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = e0f906d2, main_op2 = cb2f03c9, cmd = SCR1_IALU_CMD_SUB_LTU, main_res = 00000000, cmp_res = 0, addr_op1 = 893bf9ed, addr_op2 = 370d233c, addr_res = c0491d29
+# predicted: main_op1 = e0f906d2, main_op2 = cb2f03c9, cmd = SCR1_IALU_CMD_SUB_LTU, main_res = 00000000, cmp_res = 0, addr_op1 = 893bf9ed, addr_op2 = 370d233c, addr_res = c0491d29
+# UVM_INFO sv/scr1_pipe_ialu_scrb.svh(64) @ 5365: uvm_test_top.scr1_pipe_ialu_agnt_h.scr1_pipe_ialu_scrb_h [PASS] 
+# actual:    main_op1 = f6181fc9, main_op2 = 0385566f, cmd = SCR1_IALU_CMD_SUB_LT, main_res = 00000001, cmp_res = 1, addr_op1 = 1ec2a2b7, addr_op2 = 759db740, addr_res = 946059f7
+# predicted: main_op1 = f6181fc9, main_op2 = 0385566f, cmd = SCR1_IALU_CMD_SUB_LT, main_res = 00000001, cmp_res = 1, addr_op1 = 1ec2a2b7, addr_op2 = 759db740, addr_res = 946059f7
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 5365: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :  104
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [PASS]   100
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST_DONE]     1
+# ** Note: $finish    : C:/questasim64_2021.1/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 5365 ns  Iteration: 63  Instance: /scr1_pipe_ialu_tb_top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at C:/questasim64_2021.1/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+# 
+# !>E@0=5=85 >BGQB0 > :>4>2>< ?>:@KB88 2 D09; 107K 40==KE
+#coverage save cov.ucdb
+# B:@KB85 >BGQB0 > :>4>2>< ?>:@KB88 87 D09;0 107K 40==KE
+#vsim -viewcov cov.ucdb
+# !>E@0=5=85 >BGQB0 > :>4>2>< ?>:@KB88 2 B5:AB>2K9 D09;
+# coverage report -details -file coverage_report.txt
+# ** Warning: (vsim-19053) Option '-file' has been deprecated. Please use option '-output' instead.
+# End time: 19:37:12 on Feb 11,2026, Elapsed time: 0:01:41
+# Errors: 0, Warnings: 1
